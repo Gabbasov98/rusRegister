@@ -1,0 +1,239 @@
+.about-info--sertification,
+.about-info--sertification-page {
+    padding-bottom: 45px;
+}
+
+.about-info--sertification-page {
+    & .about-info__left {
+        margin-right: 60px;
+        width: 490px;
+    }
+}
+
+.sertificate-page {
+    background-color: #e8ebef;
+    padding: 54px 0;
+    &__title {
+        font-size: 30px;
+        font-weight: 400;
+        color: #0a5498;
+        margin-bottom: 40px;
+        font-family: "Franklin Gothic Demi C", sans-serif;
+    }
+    &__hint {
+        display: flex;
+        background-color: #ffffff;
+        padding: 35px 50px;
+        margin-top: 35px;
+        & svg {
+            margin-right: 36px;
+        }
+        &-right {
+            & p {
+                color: #161616;
+            }
+        }
+    }
+}
+
+.sertificate-info {
+    padding-bottom: 50px;
+    &__inner {
+        display: flex;
+        border: 1px solid #dde4ea;
+    }
+    &__left {
+        width: 480px;
+        flex-shrink: 0;
+        & img {
+            width: 100%;
+        }
+    }
+    &__right {
+        flex-grow: 1;
+        padding: 40px 150px 40px 60px;
+    }
+    &__title {
+        font-size: 24px;
+        font-family: "Franklin Gothic Demi C", sans-serif;
+        line-height: 31px;
+        font-weight: 400;
+        color: #3c3c3c;
+    }
+    &__desc {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #3c3c3c;
+        margin-top: 20px;
+    }
+}
+
+.sertificate-text {
+    background-color: #e8ebef;
+    padding: 52px 0 62px;
+    &__title {
+        font-size: 30px;
+        line-height: 31px;
+        font-weight: 400;
+        color: #3c3c3c;
+        margin-bottom: 30px;
+        font-family: "Franklin Gothic Demi C", sans-serif;
+    }
+    &__inner {
+        background-color: #ffffff;
+        padding: 42px 60px;
+        position: relative;
+        & * {
+            position: relative;
+            z-index: 2;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            background-image: url(../images/ceo_bg.png);
+            background-size: 100% 100%;
+            width: 370px;
+            height: 370px;
+            bottom: 42px;
+            right: 60px;
+            opacity: 0.4;
+        }
+    }
+    &__back {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sertificate-page {
+        &__hint {
+            & br {
+                display: none;
+            }
+        }
+    }
+    .about-info--sertification-page {
+        & .about-info__left {
+            margin-right: 40px;
+            width: 450px;
+        }
+    }
+    .sertificate-info {
+        &__right {
+            padding: 20px 40px;
+        }
+        &__title {
+            font-size: 22px;
+            line-height: 25px;
+            & br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-info--sertification-page {
+        & .about-info__left {
+            margin-right: 0px;
+            width: 100%;
+        }
+    }
+    .sertificate-info {
+        &__inner {
+            display: block;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            padding: 25px;
+        }
+    }
+    .sertificate-text {
+        &__inner {
+            &:after {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sertificate-page {
+        padding: 30px 0 25px;
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+        &__hint {
+            margin-top: 20px;
+            padding: 25px;
+            & svg {
+                width: 36px;
+                height: 36px;
+                margin-right: 15px;
+            }
+        }
+    }
+    .sertificate-info {
+        padding-bottom: 20px;
+    }
+    .sertificate-text {
+        &__inner {
+            &:after {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+    .about-info {
+        &__btn {
+            font-size: 13px;
+            height: 39px;
+            & svg {
+                width: 12px;
+                height: 13px;
+                margin-right: 13px;
+            }
+        }
+    }
+    .about-info--sertification-page {
+        padding-bottom: 25px;
+    }
+    .sertificate-info {
+        &__title {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__desc {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 12px;
+        }
+    }
+    .sertificate-text {
+        padding: 28px 0 37px;
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+        &__inner {
+            padding: 25px;
+            &:after {
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                right: unset;
+            }
+        }
+        &__back {
+            margin-top: 28px;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+.about-info--education-page {
+    padding-bottom: 45px;
+    & .about-info__left {
+        width: 545px;
+        margin-right: 75px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.programm {
+    &__inner {
+        border: 1px solid #dde4ea;
+        padding: 40px 60px;
+    }
+    &__title {
+        font-size: 28px;
+        font-weight: 400;
+        color: #3c3c3c;
+        margin-bottom: 20px;
+        font-family: "Franklin Gothic Demi C", sans-serif;
+    }
+}
+
+.education-text {
+    margin-top: 43px;
+    padding-bottom: 50px;
+    &__title {
+        font-size: 28px;
+        font-weight: 400;
+        color: #3c3c3c;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #d3dee8;
+        padding-bottom: 22px;
+        font-family: "Franklin Gothic Demi C", sans-serif;
+    }
+}
+
+.benefit {
+    &__title {
+        font-size: 28px;
+        font-weight: 400;
+        color: #3c3c3c;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #d3dee8;
+        padding-bottom: 22px;
+        font-family: "Franklin Gothic Demi C", sans-serif;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: calc(50% - 15px);
+        border: 1px solid #dde4ea;
+        &-top {
+            height: 75px;
+            background-color: #0a5498;
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            font-size: 22px;
+            font-weight: 400;
+            color: #ffffff;
+            width: calc(100% + 2px);
+            margin-left: -1px;
+            margin-top: -1px;
+            font-family: "Franklin Gothic Demi C", sans-serif;
+        }
+        &-text {
+            padding: 25px 50px 33px;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.education-hint {
+    padding: 32px 0 55px;
+    &__inner {
+        background-color: #e8ebef;
+        padding: 32px 45px;
+        display: flex;
+    }
+    &__left {
+        display: flex;
+    }
+    &__img {
+        width: 70px;
+        height: 70px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        flex-shrink: 0;
+        & svg {
+            width: 57px;
+        }
+    }
+    &__btn {
+        width: 273px;
+        height: 58px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #ffffff;
+        margin-left: 65px;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-info--education-page {
+        & .about-info__left {
+            width: 445px;
+            margin-right: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-info--education-page {
+        & .about-info__left {
+            width: 100%;
+            margin-right: 0px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+    .programm {
+        &__inner {
+            padding: 24px;
+        }
+    }
+    .benefit {
+        &__items {
+            display: block;
+        }
+        &__item {
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 17px;
+            }
+        }
+    }
+    .education-hint {
+        &__inner {
+            display: block;
+        }
+        &__btn {
+            margin-left: 0;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-info--education-page {
+        padding-bottom: 20px;
+    }
+    .programm {
+        &__title {
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 16px;
+            & br {
+                display: none;
+            }
+        }
+    }
+    .education-text {
+        margin-top: 32px;
+        padding-bottom: 30px;
+        &__title {
+            font-size: 20px;
+            padding-bottom: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    .benefit {
+        &__title {
+            font-size: 20px;
+            padding-bottom: 18px;
+            margin-bottom: 20px;
+        }
+        &__item {
+            &-top {
+                height: 56px;
+                font-size: 16px;
+                padding: 0 22px;
+            }
+            &-text {
+                padding: 22px;
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+    }
+    .education-hint {
+        padding: 20px 0;
+        &__inner {
+            padding: 24px;
+        }
+        &__img {
+            width: 43px;
+            height: 43px;
+            margin-right: 15px;
+            & svg {
+                width: 35px;
+            }
+        }
+        &__btn {
+            height: 51px;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+    }
+}

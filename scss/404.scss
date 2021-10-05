@@ -1,0 +1,110 @@
+.error404 {
+    background-color: #0a5498;
+    flex-grow: 1;
+    padding: 105px 0;
+    &__inner {
+        display: flex;
+    }
+    &__left {
+        margin-left: 100px;
+        width: 277px;
+        margin-right: 78px;
+        flex-shrink: 0;
+        & img {
+            width: 100%;
+        }
+    }
+    &__top {
+        display: flex;
+        & svg {
+            width: 100%;
+        }
+        &-img {
+            width: 186px;
+            margin-right: 38px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__title {
+        font-family: "Franklin Gothic Demi C";
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__subtitle {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-top: 30px;
+    }
+    &__desc {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #b5d1eb;
+        margin-top: 22px;
+    }
+    &__back {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .error404 {
+        &__left {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .error404 {
+        padding: 45px 0;
+        &__inner {
+            display: block;
+            padding-left: 25px;
+        }
+        &__left {
+            margin: 0;
+        }
+        &__right {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error404 {
+        &__left {
+            width: 151px;
+        }
+        &__top {
+            &-img {
+                width: 102px;
+                margin-right: 20px;
+            }
+        }
+        &__title {
+            font-size: 19.7px;
+            line-height: 24px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 23px;
+        }
+        &__desc {
+            font-size: 13px;
+            line-height: 18px;
+            margin-top: 20px;
+        }
+        &__back {
+            margin-top: 30px;
+        }
+    }
+}

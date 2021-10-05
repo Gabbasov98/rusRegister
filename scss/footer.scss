@@ -1,0 +1,180 @@
+.footer {
+    background-color: #081520;
+    padding: 35px 0;
+    background-image: url(../images/gyphon3.png), url(../images/gyphon2.png);
+    background-repeat: no-repeat;
+    background-position: 0 bottom, right bottom;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right {
+        padding-right: 30px;
+    }
+    &__logo {
+        width: 205px;
+        margin-top: -5px;
+        display: block;
+        & img {
+            width: 100%;
+        }
+    }
+    &__hint {
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #9b9b9b;
+        margin-top: 25px;
+        max-width: 370px;
+    }
+    &__phones {
+        display: flex;
+        & svg {
+            margin-right: 15px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+    }
+    &__phone {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        display: block;
+        white-space: nowrap;
+        &:hover {
+            color: #b5bbc0;
+        }
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+        &:last-child {
+            font-size: 16px;
+        }
+    }
+    &__mail,
+    &__address {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ffffff;
+        margin-top: 20px;
+        align-items: center;
+        display: flex;
+        & svg {
+            margin-right: 15px;
+        }
+        &:hover {
+            color: #b5bbc0;
+            & path {
+                fill: #b5bbc0;
+            }
+        }
+    }
+    &__address {
+        margin-top: 17px;
+    }
+    &__btn {
+        width: 175px;
+        height: 43px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+    }
+    &__privacy {
+        font-size: 12px;
+        margin-top: 35px;
+        font-weight: 400;
+        color: #ffffff;
+        display: block;
+        &:hover {
+            color: #b5bbc0;
+        }
+    }
+    &__syteby {
+        margin-top: 15px;
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #9b9b9b;
+        & a {
+            color: #e3e3e3;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        &__right {
+            padding-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        background-image: none;
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__left {
+            order: 3;
+            width: 100%;
+            margin-top: 17px;
+        }
+        &__center {
+            order: 1;
+            width: 100%;
+        }
+        &__right {
+            margin-top: 20px;
+            order: 2;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 25px 0 22px;
+        &__phone {
+            font-size: 16px;
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+        &__mail {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        &__address {
+            align-items: flex-start;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 15px;
+            & svg {
+                margin-top: 5px;
+            }
+        }
+        &__btn {
+            width: 153px;
+            height: 38px;
+            font-size: 10px;
+        }
+        &__privacy {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        &__syteby {
+            margin-top: 13px;
+        }
+        &__logo {
+            width: 163px;
+        }
+        &__hint {
+            font-size: 8px;
+            line-height: 12px;
+            margin-top: 12px;
+        }
+    }
+}

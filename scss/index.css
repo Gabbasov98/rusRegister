@@ -1,0 +1,490 @@
+.main {
+  background-image: url(../images/main_image.jpg);
+  background-size: cover;
+  background-position: center center; }
+  .main__inner {
+    padding: 70px 0 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  .main img {
+    width: 210px; }
+  .main__title {
+    font-family: "Franklin Gothic Demi C", sans-serif;
+    font-size: 29px;
+    line-height: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 30px; }
+  .main__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; }
+  .main__btn {
+    padding: 0 31px;
+    height: 43px;
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    color: #0a5498; }
+    .main__btn:not(:last-child) {
+      margin-right: 10px; }
+    .main__btn:hover {
+      background-color: #013b6f;
+      color: #fff; }
+
+.advantages__top {
+  box-shadow: 0px 2px 10px 0px rgba(2, 37, 68, 0.09);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 10px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff; }
+  .advantages__top-item {
+    width: calc(100% / 3);
+    min-height: 76px;
+    padding: 0 90px; }
+    .advantages__top-item:not(:last-child) {
+      border-right: 1px dotted #4880b2; }
+    .advantages__top-item-title {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #1c1c1c;
+      display: block;
+      text-align: center;
+      font-family: "Franklin Gothic Demi C", sans-serif; }
+    .advantages__top-item-desc {
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #292929;
+      display: block;
+      text-align: center;
+      margin-top: 16px; }
+.advantages__bottom {
+  display: flex; }
+  .advantages__bottom-left {
+    width: 354px;
+    flex-shrink: 0;
+    border-radius: 5px 0px 0px 5px; }
+    .advantages__bottom-left img {
+      width: 100%;
+      border-radius: 5px 0px 0px 5px; }
+  .advantages__bottom-right {
+    flex-grow: 1;
+    background-image: url(../images/gryphon.png), linear-gradient(90deg, #0a5498 0%, #09477d 100%);
+    background-size: 325px auto, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right 30px bottom, 0 0;
+    padding: 43px 70px;
+    color: #ffffff;
+    border-radius: 0px 5px 5px 0px; }
+  .advantages__bottom-title {
+    font-family: "Franklin Gothic Demi C", sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .advantages__bottom-subtitle {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-top: 18px; }
+  .advantages__bottom-desc {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #d0e1f0;
+    margin-top: 16px; }
+  .advantages__bottom-buttons {
+    display: flex;
+    margin-top: 30px; }
+  .advantages__bottom-btn {
+    height: 43px;
+    background-color: #ffffff;
+    padding: 0 32px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    color: #171717;
+    margin-right: 8px;
+    white-space: nowrap; }
+    .advantages__bottom-btn:hover {
+      background-color: #013b6f;
+      color: #fff; }
+  .advantages__bottom-btn2 {
+    width: 175px;
+    height: 43px;
+    margin-left: 13px;
+    font-size: 12px; }
+
+.sertificate {
+  margin-top: 60px;
+  padding: 60px 0 45px;
+  background-size: cover;
+  background-position: right center;
+  background-image: url(../images/sertificate_bg.jpg); }
+  .sertificate__info {
+    padding: 3px 3px 0 0; }
+  .sertificate__title {
+    font-family: "Franklin Gothic Demi C", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .sertificate__desc {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #dee8f2;
+    margin-top: 25px; }
+  .sertificate__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 34px; }
+  .sertificate__item {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; }
+    .sertificate__item:hover {
+      cursor: pointer; }
+      .sertificate__item:hover .sertificate__item-title {
+        color: #04294b; }
+      .sertificate__item:hover .sertificate__item-link {
+        background-color: #003464; }
+    .sertificate__item-top {
+      border-radius: 5px 5px 0px 0px;
+      padding: 25px 50px 25px 40px;
+      position: relative;
+      background-color: #fff;
+      flex-grow: 1; }
+      .sertificate__item-top img {
+        position: absolute;
+        opacity: 0.14;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 115px; }
+    .sertificate__item-title {
+      font-family: "Franklin Gothic Demi C", sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #0a5498;
+      transition: all .3s; }
+    .sertificate__item-desc {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #191919;
+      margin-top: 17px; }
+    .sertificate__item-link {
+      margin-top: auto;
+      border-radius: 0px 0px 5px 5px;
+      padding: 0 40px;
+      height: 48px;
+      background-color: #1979d0;
+      display: flex;
+      font-size: 14px;
+      font-weight: 400;
+      color: #ffffff;
+      align-items: center; }
+      .sertificate__item-link:hover {
+        color: #fff; }
+      .sertificate__item-link svg {
+        margin-left: 10px; }
+  .sertificate__all {
+    width: 146px;
+    height: 37px;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    margin: 55px auto 0; }
+
+.news {
+  padding: 54px 0 40px; }
+  .news__title {
+    font-family: "Franklin Gothic Demi C", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0a5498;
+    text-align: center;
+    position: relative; }
+    .news__title span {
+      background-color: #fff;
+      padding: 0 60px;
+      position: relative;
+      z-index: 2; }
+    .news__title:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      background-color: #dcdcdc;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+  .news__items {
+    display: grid;
+    margin-top: 47px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 72px; }
+  .news__item-top {
+    display: block;
+    height: 191px; }
+    .news__item-top img {
+      width: 100%;
+      height: 100%; }
+  .news__item-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: #363636;
+    margin-top: 19px; }
+  .news__item-title {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #094987;
+    display: block; }
+    .news__item-title:hover {
+      color: #042748; }
+  .news__all {
+    width: 146px;
+    height: 37px;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    margin: 40px auto 0; }
+
+.edu {
+  padding: 54px 0 48px;
+  background-color: #0c1824;
+  background-image: url(../images/man2.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%; }
+  .edu__top {
+    display: flex; }
+  .edu__title {
+    font-family: "Franklin Gothic Demi C", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 55px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .edu__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: -5px; }
+  .edu__desc {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #dee8f2;
+    margin-top: 27px; }
+  .edu__link {
+    width: 146px;
+    height: 37px;
+    margin-top: 32px;
+    font-size: 10.5px;
+    letter-spacing: 0.14em; }
+
+@media screen and (max-width: 1200px) {
+  .advantages__top-item {
+    padding: 0 40px; }
+  .advantages__bottom-right {
+    padding: 35px 40px; }
+
+  .sertificate {
+    padding: 30px 0; }
+    .sertificate__items {
+      gap: 15px; }
+    .sertificate__all {
+      margin-top: 25px; }
+
+  .news {
+    padding: 35px 0; }
+    .news__items {
+      gap: 15px; }
+    .news__all {
+      margin-top: 35px; } }
+@media screen and (max-width: 992px) {
+  .advantages__top {
+    height: unset;
+    display: block;
+    padding: 12px 40px; }
+    .advantages__top-item {
+      padding: 13px 0;
+      width: 100%;
+      position: relative; }
+      .advantages__top-item:not(:last-child) {
+        border-right: none; }
+        .advantages__top-item:not(:last-child):after {
+          content: '';
+          position: absolute;
+          z-index: 1;
+          width: 51px;
+          height: 2px;
+          border-bottom: 1px dotted #4880b2;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%); }
+      .advantages__top-item-desc br {
+        display: none; }
+  .advantages__bottom-left {
+    display: none; }
+
+  .sertificate__items {
+    display: block; }
+  .sertificate__item {
+    margin-top: 15px;
+    min-height: 157px; }
+
+  .news__items {
+    display: block; }
+  .news__item-top {
+    height: unset; }
+    .news__item-top img {
+      height: unset; }
+  .news__item:not(:last-child) {
+    margin-bottom: 35px; }
+
+  .edu__top {
+    display: block; }
+  .edu__subtitle {
+    margin-top: 25px; } }
+@media screen and (max-width: 768px) {
+  .main__inner {
+    padding: 52px 0 65px; }
+  .main img {
+    width: 135px; }
+  .main__title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 26px; }
+  .main__buttons {
+    margin-top: 32px; }
+  .main__btn {
+    padding: 0 23px;
+    height: 33px;
+    font-size: 9.3px; }
+
+  .advantages__top {
+    margin-top: -25px; }
+    .advantages__top-item {
+      min-height: unset; }
+      .advantages__top-item-title {
+        font-size: 12px; }
+      .advantages__top-item-desc {
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 7px; }
+  .advantages__bottom-right {
+    padding: 21px 22px 19px;
+    background-size: 252px auto, 100% 100%; }
+  .advantages__bottom-title {
+    font-size: 14px;
+    line-height: 22px; }
+    .advantages__bottom-title br {
+      display: none; }
+  .advantages__bottom-subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px; }
+  .advantages__bottom-desc {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 12px; }
+  .advantages__bottom-buttons {
+    margin-top: 20px;
+    flex-wrap: wrap; }
+  .advantages__bottom-btn {
+    height: 32px;
+    padding: 0 22px;
+    font-size: 9px;
+    margin-right: 6px;
+    margin-bottom: 6px; }
+  .advantages__bottom-btn2 {
+    width: 128px;
+    height: 32px;
+    margin-left: 0;
+    font-size: 9px;
+    margin-bottom: 6px; }
+
+  .sertificate__title {
+    font-size: 22px; }
+  .sertificate__desc {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 15px; }
+  .sertificate__info {
+    position: relative; }
+  .sertificate__item {
+    min-height: 141px; }
+    .sertificate__item-top {
+      padding: 22px 25px; }
+      .sertificate__item-top img {
+        width: 100px;
+        right: 15px; }
+    .sertificate__item-title {
+      font-size: 19.3px; }
+    .sertificate__item-desc {
+      font-size: 14.1px;
+      line-height: 130%;
+      margin-top: 14px; }
+    .sertificate__item-link {
+      height: 42px;
+      padding: 0 25px;
+      font-size: 12.3px; }
+
+  .news__title {
+    font-size: 20px; }
+    .news__title span {
+      padding: 0 30px; }
+  .news__items {
+    margin-top: 30px; }
+  .news__item-date {
+    font-size: 10px;
+    margin-top: 18px; }
+  .news__item-title {
+    font-size: 17px;
+    line-height: 22px;
+    margin-top: 13px; }
+  .news__all {
+    margin-top: 30px; }
+
+  .edu {
+    background-position: right -200px center;
+    padding: 37px 0 32px; }
+    .edu__title {
+      font-size: 22px; }
+    .edu__subtitle {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 22px; }
+      .edu__subtitle br {
+        display: none; }
+    .edu__desc {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 16px; }
+      .edu__desc br {
+        display: none; }
+    .edu__link {
+      margin-top: 20px; } }
+@media screen and (max-width: 430px) {
+  .main {
+    background-position: right -270px center; } }
+
+/*# sourceMappingURL=index.css.map */

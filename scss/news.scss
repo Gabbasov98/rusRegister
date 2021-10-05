@@ -1,0 +1,287 @@
+.news {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sidebar {
+        width: 257px;
+        margin-right: 60px;
+        flex-shrink: 0;
+        &-title {
+            width: 100%;
+            height: 54px;
+            background-color: #0a5498;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 0 25px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+        &-link {
+            width: 100%;
+            height: 42px;
+            background-color: #ffffff;
+            border: 1px solid #081520;
+            color: #0a5498;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+            padding: 0 25px;
+            &:hover {
+                background-color: #0a5498;
+                color: #fff;
+                border-color: #0a5498;
+            }
+        }
+        &-link--active {
+            background-color: #081520;
+            color: #fff;
+        }
+    }
+    &__content {
+        flex-grow: 1;
+        &-item {
+            border: 1px solid rgba(38, 47, 60, 0.16);
+            border-radius: 2px;
+            padding: 25px;
+            display: flex;
+            transition: all .3s;
+            &:hover {
+                border: 1px solid #0a5498;
+            }
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            &-img {
+                width: 345px;
+                margin-right: 45px;
+                flex-shrink: 0;
+                display: block;
+                & img {
+                    width: 100%;
+                }
+            }
+            &-date {
+                font-size: 12px;
+                font-weight: 400;
+                color: #363636;
+                margin-top: 20px;
+            }
+            &-title {
+                display: block;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #094987;
+                margin-top: 15px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                &:hover {
+                    color: #042748;
+                }
+            }
+            &-desc {
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #1c1c1c;
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+.news-page {
+    padding: 30px 0;
+}
+
+.news-item {
+    &__top {
+        display: flex;
+        padding-bottom: 32px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #d3dee8;
+    }
+    &__img {
+        width: 460px;
+        margin-right: 40px;
+        flex-shrink: 0;
+        & img {
+            width: 100%;
+        }
+    }
+    & p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        padding: 30px 0;
+        border-top: 1px solid #d3dee8;
+    }
+    &__date {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #1b1b1b;
+        & strong {
+            font-weight: 500;
+        }
+        & svg {
+            margin-right: 12px;
+        }
+    }
+}
+
+.vacancy-page {
+    padding-bottom: 40px;
+    &__item {
+        border: 1px solid #dde4ea;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        &-top {
+            background-color: #a03992;
+            width: calc(100% + 2px);
+            margin-left: -1px;
+            margin-top: -1px;
+            font-size: 24px;
+            font-weight: 500;
+            color: #ffffff;
+            padding: 0 50px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+        }
+        &-bottom {
+            padding: 25px 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .news {
+        &__sidebar {
+            margin-right: 20px;
+        }
+        &__content {
+            &-item {
+                &-img {
+                    width: 300px;
+                    margin-right: 20px;
+                }
+                &-date {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .news-item {
+        &__top {
+            display: block;
+            padding-bottom: 28px;
+            & p {
+                margin-bottom: 0;
+            }
+        }
+        &__img {
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .news {
+        &__sidebar {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .news {
+        &__content {
+            &-item {
+                padding: 0;
+                border: none !important;
+                display: block;
+                &:not(:last-child) {
+                    margin-bottom: 36px;
+                }
+                &-img {
+                    width: 100%;
+                }
+                &-date {
+                    font-size: 10px;
+                    margin-top: 18px;
+                }
+                &-title {
+                    font-size: 17px;
+                    line-height: 22px;
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+    .news-page {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .news-item {
+        margin-top: -6px;
+        & p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__top {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            & p {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        &__nav {
+            margin-top: 18px;
+            padding-top: 18px;
+            flex-wrap: wrap;
+        }
+        &__date {
+            width: 100%;
+            order: 1;
+            font-size: 12px;
+        }
+        &__back {
+            order: 2;
+            margin-top: 15px;
+        }
+    }
+    .vacancy-page {
+        padding-bottom: 24px;
+        &__item {
+            &-top {
+                padding: 0 24px;
+                font-size: 16px;
+                height: 52px;
+            }
+            &-bottom {
+                padding: 18px 24px;
+            }
+        }
+    }
+}

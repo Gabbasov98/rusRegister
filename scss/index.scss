@@ -1,0 +1,642 @@
+.main {
+    background-image: url(../images/main_image.jpg);
+    background-size: cover;
+    background-position: center center;
+    &__inner {
+        padding: 70px 0 90px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    & img {
+        width: 210px;
+    }
+    &__title {
+        font-family: "Franklin Gothic Demi C", sans-serif;
+        font-size: 29px;
+        line-height: 38px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-top: 30px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    &__btn {
+        padding: 0 31px;
+        height: 43px;
+        background-color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        color: #0a5498;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        &:hover {
+            background-color: #013b6f;
+            color: #fff;
+        }
+    }
+}
+
+.advantages {
+    &__top {
+        box-shadow: 0px 2px 10px 0px rgba(2, 37, 68, 0.09);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        padding: 38px 10px;
+        margin-top: -40px;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        &-item {
+            width: calc(100% / 3);
+            min-height: 76px;
+            padding: 0 90px;
+            &:not(:last-child) {
+                border-right: 1px dotted #4880b2;
+            }
+            &-title {
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #1c1c1c;
+                display: block;
+                text-align: center;
+                font-family: "Franklin Gothic Demi C", sans-serif;
+            }
+            &-desc {
+                font-size: 13px;
+                line-height: 18px;
+                font-weight: 400;
+                color: #292929;
+                display: block;
+                text-align: center;
+                margin-top: 16px;
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        &-left {
+            width: 354px;
+            flex-shrink: 0;
+            border-radius: 5px 0px 0px 5px;
+            & img {
+                width: 100%;
+                border-radius: 5px 0px 0px 5px;
+            }
+        }
+        &-right {
+            flex-grow: 1;
+            background-image: url(../images/gryphon.png), linear-gradient(90.0deg, #0a5498 0%, #09477d 100%);
+            background-size: 325px auto, 100% 100%;
+            background-repeat: no-repeat;
+            background-position: right 30px bottom, 0 0;
+            padding: 43px 70px;
+            color: #ffffff;
+            border-radius: 0px 5px 5px 0px;
+        }
+        &-title {
+            font-family: "Franklin Gothic Demi C", sans-serif;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        &-subtitle {
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 500;
+            margin-top: 18px;
+        }
+        &-desc {
+            font-size: 15px;
+            line-height: 23px;
+            font-weight: 400;
+            color: #d0e1f0;
+            margin-top: 16px;
+        }
+        &-buttons {
+            display: flex;
+            margin-top: 30px;
+        }
+        &-btn {
+            height: 43px;
+            background-color: #ffffff;
+            padding: 0 32px;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            color: #171717;
+            margin-right: 8px;
+            white-space: nowrap;
+            &:hover {
+                background-color: #013b6f;
+                color: #fff;
+            }
+        }
+        &-btn2 {
+            width: 175px;
+            height: 43px;
+            margin-left: 13px;
+            font-size: 12px;
+        }
+    }
+}
+
+.sertificate {
+    margin-top: 60px;
+    padding: 60px 0 45px;
+    background-size: cover;
+    background-position: right center;
+    background-image: url(../images/sertificate_bg.jpg);
+    &__info {
+        padding: 3px 3px 0 0;
+    }
+    &__title {
+        font-family: "Franklin Gothic Demi C", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #dee8f2;
+        margin-top: 25px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 34px;
+    }
+    &__item {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            cursor: pointer;
+            & .sertificate__item-title {
+                color: #04294b;
+            }
+            & .sertificate__item-link {
+                background-color: #003464;
+            }
+        }
+        &-top {
+            border-radius: 5px 5px 0px 0px;
+            padding: 25px 50px 25px 40px;
+            position: relative;
+            background-color: #fff;
+            flex-grow: 1;
+            & img {
+                position: absolute;
+                opacity: 0.14;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 115px;
+            }
+        }
+        &-title {
+            font-family: "Franklin Gothic Demi C", sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            color: #0a5498;
+            transition: all .3s;
+        }
+        &-desc {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #191919;
+            margin-top: 17px;
+        }
+        &-link {
+            margin-top: auto;
+            border-radius: 0px 0px 5px 5px;
+            padding: 0 40px;
+            height: 48px;
+            background-color: #1979d0;
+            display: flex;
+            font-size: 14px;
+            font-weight: 400;
+            color: #ffffff;
+            align-items: center;
+            &:hover {
+                color: #fff;
+            }
+            & svg {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__all {
+        width: 146px;
+        height: 37px;
+        font-size: 10.5px;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        margin: 55px auto 0;
+    }
+}
+
+.news {
+    padding: 54px 0 40px;
+    &__title {
+        font-family: "Franklin Gothic Demi C", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #0a5498;
+        text-align: center;
+        position: relative;
+        & span {
+            background-color: #fff;
+            padding: 0 60px;
+            position: relative;
+            z-index: 2;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            background-color: #dcdcdc;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__items {
+        display: grid;
+        margin-top: 47px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 72px;
+    }
+    &__item {
+        &-top {
+            display: block;
+            height: 191px;
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-date {
+            font-size: 12px;
+            font-weight: 400;
+            color: #363636;
+            margin-top: 19px;
+        }
+        &-title {
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #094987;
+            display: block;
+            &:hover {
+                color: #042748;
+            }
+        }
+    }
+    &__all {
+        width: 146px;
+        height: 37px;
+        font-size: 10.5px;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        margin: 40px auto 0;
+    }
+}
+
+.edu {
+    padding: 54px 0 48px;
+    background-color: #0c1824;
+    background-image: url(../images/man2.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    &__top {
+        display: flex;
+    }
+    &__title {
+        font-family: "Franklin Gothic Demi C", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        margin-right: 55px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__subtitle {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #ffffff;
+        margin-top: -5px;
+    }
+    &__desc {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #dee8f2;
+        margin-top: 27px;
+    }
+    &__link {
+        width: 146px;
+        height: 37px;
+        margin-top: 32px;
+        font-size: 10.5px;
+        letter-spacing: 0.14em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .advantages {
+        &__top {
+            &-item {
+                padding: 0 40px;
+            }
+        }
+        &__bottom {
+            &-right {
+                padding: 35px 40px;
+            }
+        }
+    }
+    .sertificate {
+        padding: 30px 0;
+        &__items {
+            gap: 15px;
+        }
+        &__all {
+            margin-top: 25px;
+        }
+    }
+    .news {
+        padding: 35px 0;
+        &__items {
+            gap: 15px;
+        }
+        &__all {
+            margin-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .advantages {
+        &__top {
+            height: unset;
+            display: block;
+            padding: 12px 40px;
+            &-item {
+                padding: 13px 0;
+                width: 100%;
+                position: relative;
+                &:not(:last-child) {
+                    border-right: none;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        z-index: 1;
+                        width: 51px;
+                        height: 2px;
+                        border-bottom: 1px dotted #4880b2;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                &-desc {
+                    & br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            &-left {
+                display: none;
+            }
+        }
+    }
+    .sertificate {
+        &__items {
+            display: block;
+        }
+        &__item {
+            margin-top: 15px;
+            min-height: 157px;
+        }
+    }
+    .news {
+        &__items {
+            display: block;
+        }
+        &__item {
+            &-top {
+                height: unset;
+                & img {
+                    height: unset;
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .edu {
+        &__top {
+            display: block;
+        }
+        &__subtitle {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        &__inner {
+            padding: 52px 0 65px;
+        }
+        & img {
+            width: 135px;
+        }
+        &__title {
+            font-size: 20px;
+            line-height: 28px;
+            margin-top: 26px;
+        }
+        &__buttons {
+            margin-top: 32px;
+        }
+        &__btn {
+            padding: 0 23px;
+            height: 33px;
+            font-size: 9.3px;
+        }
+    }
+    .advantages {
+        &__top {
+            margin-top: -25px;
+            &-item {
+                min-height: unset;
+                &-title {
+                    font-size: 12px;
+                }
+                &-desc {
+                    font-size: 10px;
+                    line-height: 12px;
+                    margin-top: 7px;
+                }
+            }
+        }
+        &__bottom {
+            &-right {
+                padding: 21px 22px 19px;
+                background-size: 252px auto, 100% 100%;
+            }
+            &-title {
+                font-size: 14px;
+                line-height: 22px;
+                & br {
+                    display: none;
+                }
+            }
+            &-subtitle {
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 10px;
+            }
+            &-desc {
+                font-size: 12px;
+                line-height: 18px;
+                margin-top: 12px;
+            }
+            &-buttons {
+                margin-top: 20px;
+                flex-wrap: wrap;
+            }
+            &-btn {
+                height: 32px;
+                padding: 0 22px;
+                font-size: 9px;
+                margin-right: 6px;
+                margin-bottom: 6px;
+            }
+            &-btn2 {
+                width: 128px;
+                height: 32px;
+                margin-left: 0;
+                font-size: 9px;
+                margin-bottom: 6px;
+            }
+        }
+    }
+    .sertificate {
+        &__title {
+            font-size: 22px;
+        }
+        &__desc {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 15px;
+        }
+        &__info {
+            position: relative;
+        }
+        &__item {
+            min-height: 141px;
+            &-top {
+                padding: 22px 25px;
+                & img {
+                    width: 100px;
+                    right: 15px;
+                }
+            }
+            &-title {
+                font-size: 19.3px;
+            }
+            &-desc {
+                font-size: 14.1px;
+                line-height: 130%;
+                margin-top: 14px;
+            }
+            &-link {
+                height: 42px;
+                padding: 0 25px;
+                font-size: 12.3px;
+            }
+        }
+    }
+    .news {
+        &__title {
+            font-size: 20px;
+            & span {
+                padding: 0 30px;
+            }
+        }
+        &__items {
+            margin-top: 30px;
+        }
+        &__item {
+            &-date {
+                font-size: 10px;
+                margin-top: 18px;
+            }
+            &-title {
+                font-size: 17px;
+                line-height: 22px;
+                margin-top: 13px;
+            }
+        }
+        &__all {
+            margin-top: 30px;
+        }
+    }
+    .edu {
+        background-position: right -200px center;
+        padding: 37px 0 32px;
+        &__title {
+            font-size: 22px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 22px;
+            & br {
+                display: none;
+            }
+        }
+        &__desc {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 16px;
+            & br {
+                display: none;
+            }
+        }
+        &__link {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .main {
+        background-position: right -270px center;
+    }
+}
